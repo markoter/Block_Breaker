@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Paddle : MonoBehaviour
 {
+    // configuration parameters
+
+    
+    [SerializeField] float minX = 1f;
+    [SerializeField] float maxX = 15f;
     [SerializeField] float screenWidthInUnits = 16f;
     // Start is called before the first frame update
     void Start()
@@ -16,7 +21,9 @@ public class Paddle : MonoBehaviour
     {
         float mousePosInUnits = Input.mousePosition.x / Screen.width * screenWidthInUnits;
         //  Debug.Log(Input.mousePosition.x / Screen.width * screenWidthInUnits);
-        Vector2 paddlePos = new Vector2(mousePosInUnits, transform.position.y);
+        Vector2 paddlePos = new Vector2(transform.position.x, transform.position.y);
+        paddlePos.x = Mathf.Clamp(mousePosInUnits, minX, maxX);
+        Debug.Log(paddlePos.x);
         transform.position = paddlePos;
     }
 }
