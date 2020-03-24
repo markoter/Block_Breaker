@@ -1,0 +1,4 @@
+zmiana zachowania piłki:
+"gravity" w "Rigidbody 2d" na 0
+materiał "bounce" parametr "friction" na 0
+siła wybicia początkowego na starcie w "ball" script "Y push"
