@@ -25,7 +25,7 @@ public class Paddle : MonoBehaviour
         {
             x = Mathf.Clamp(mousePosInUnits, minX, maxX)
         };
-        Debug.Log(paddlePos.x);
+        // wyswietlanie pozycji paletki w konsoli Debug.Log(paddlePos.x);
         transform.position = paddlePos;
     }
 }
