@@ -1702,6 +1702,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 3170550947715685522, guid: 10dc1a765f880a646922397fcfd1ce76,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10dc1a765f880a646922397fcfd1ce76, type: 3}
 --- !u!1001 &3265544029329296093
@@ -1908,6 +1913,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Play Space
+      objectReference: {fileID: 0}
+    - target: {fileID: 4136617356890550301, guid: d7bd84f6b3138e74c8548b6058436273,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7bd84f6b3138e74c8548b6058436273, type: 3}
@@ -2446,6 +2456,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Game Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368783811853492827, guid: 0682d8cde3d19ad4eafc360fbbd51f39,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7368783812123602537, guid: 0682d8cde3d19ad4eafc360fbbd51f39,
         type: 3}
