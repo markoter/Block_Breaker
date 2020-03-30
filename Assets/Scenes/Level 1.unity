@@ -1735,6 +1735,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Status
       objectReference: {fileID: 0}
+    - target: {fileID: 2407185966339467389, guid: 15324bc832c9d3442a1285842dc2e9de,
+        type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 7368783811991584944}
     - target: {fileID: 2407185966339467390, guid: 15324bc832c9d3442a1285842dc2e9de,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2617,7 +2622,7 @@ PrefabInstance:
     - target: {fileID: 7368783811853492827, guid: 0682d8cde3d19ad4eafc360fbbd51f39,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7368783812123602537, guid: 0682d8cde3d19ad4eafc360fbbd51f39,
         type: 3}
@@ -2626,3 +2631,15 @@ PrefabInstance:
       objectReference: {fileID: 2013948110}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0682d8cde3d19ad4eafc360fbbd51f39, type: 3}
+--- !u!114 &7368783811991584944 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1400318290, guid: 0682d8cde3d19ad4eafc360fbbd51f39,
+    type: 3}
+  m_PrefabInstance: {fileID: 7368783811991584943}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
