@@ -6,7 +6,7 @@ public class Block : MonoBehaviour
 {
     [SerializeField] public AudioClip breakSound;
     [SerializeField] public GameObject blockSparklesVFX;
-    float sparklesDestroyDelay = 2f;
+    private float sparklesDestroyDelay = 1f;
     // cached  reference
     Level level;
 
