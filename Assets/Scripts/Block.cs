@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Block : MonoBehaviour
 {
-    [SerializeField] AudioClip breakSound;
+    [SerializeField] public AudioClip breakSound;
 
     // cached  reference
     Level level;

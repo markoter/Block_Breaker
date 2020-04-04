@@ -8,7 +8,7 @@ public class GameStatus : MonoBehaviour
     //config params
     [Range(0.1f, 10f)][SerializeField] float gameSpeed = 1f;
     [SerializeField] int pointsPerBlock = 35;
-    [SerializeField] TextMeshProUGUI scoreText;
+    [SerializeField] public TextMeshProUGUI scoreText;
     
 
     // state variables

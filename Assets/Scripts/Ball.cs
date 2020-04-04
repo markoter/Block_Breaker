@@ -6,10 +6,10 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
     // ocnfig params
-    [SerializeField] Paddle paddle1;
+    [SerializeField] public Paddle paddle1;
     [SerializeField] float xPush = 2f;
     [SerializeField] float yPush = 15f;
-    [SerializeField] AudioClip[] ballSounds;
+    [SerializeField] public AudioClip[] ballSounds;
 
     // cached component references
     AudioSource myAudioSource;
