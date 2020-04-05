@@ -1,14 +1,23 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Block : MonoBehaviour
 {
+    //config params
     [SerializeField] public AudioClip breakSound;
     [SerializeField] public GameObject blockSparklesVFX;
+    [SerializeField] public int maxHits;
+    [SerializeField] public Sprite[] hitSprites;
     private float sparklesDestroyDelay = 1f;
+
     // cached  reference
     Level level;
+
+    //state variables
+    [SerializeField] public int timesHit; //only serialized for debut purposes
+
 
     private void Start()
     {
@@ -29,8 +38,27 @@ public class Block : MonoBehaviour
     {
         if (tag == "Breakable")
         {
+            HandleHit();
+        }
+    }
+
+    private void HandleHit()
+    {
+        timesHit++;
+        if (timesHit >= maxHits)
+        {
             DestroyBlock();
-        }  
+        }
+        else
+        {
+            ShowNextHitSprite();
+        }
+    }
+
+    private void ShowNextHitSprite()
+    {
+        int spriteIndex = timesHit - 1;
+        GetComponent<SpriteRenderer>().sprite = hitSprites[spriteIndex];
     }
 
     private void DestroyBlock()
