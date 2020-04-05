@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,6 +9,7 @@ public class Block : MonoBehaviour
     [SerializeField] public AudioClip breakSound;
     [SerializeField] public GameObject blockSparklesVFX;
     [SerializeField] public int maxHits;
+    [SerializeField] public Sprite[] hitSprites;
     private float sparklesDestroyDelay = 1f;
 
     // cached  reference
@@ -44,6 +46,16 @@ public class Block : MonoBehaviour
         {
             DestroyBlock();
         }
+        else
+        {
+            ShowNextHitSprite();
+        }
+    }
+
+    private void ShowNextHitSprite()
+    {
+        int spriteIndex = timesHit - 1;
+        GetComponent<SpriteRenderer>().sprite = hitSprites[spriteIndex];
     }
 
     private void DestroyBlock()
