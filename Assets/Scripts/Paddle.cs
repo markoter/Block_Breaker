@@ -19,11 +19,23 @@ public class Paddle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float mousePosInUnits = Input.mousePosition.x / Screen.width * screenWidthInUnits;
         //  Debug.Log(Input.mousePosition.x / Screen.width * screenWidthInUnits);
         Vector2 paddlePos = new Vector2(transform.position.x, transform.position.y);
-        paddlePos.x = Mathf.Clamp(mousePosInUnits, minX, maxX);
+        paddlePos.x = Mathf.Clamp(GetXPos(), minX, maxX);
         // wyswietlanie pozycji paletki w konsoli Debug.Log(paddlePos.x);
         transform.position = paddlePos;
     }
+
+    private float GetXPos()
+    {
+        if (FindObjectOfType<GameSession>().IsAutoPlayEnabled())
+        {
+            return FindObjectOfType<Ball>().transform.position.x;
+        }
+        else
+        {
+            return Input.mousePosition.x / Screen.width * screenWidthInUnits;
+        }
+    }
+
 }
