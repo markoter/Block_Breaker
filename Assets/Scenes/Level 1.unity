@@ -365,6 +365,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1608741908}
     m_Modifications:
+    - target: {fileID: 7146359368545672577, guid: 942acebf14d45254a8a7dc5c7e76dcb3,
+        type: 3}
+      propertyPath: hitSprites.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7146359368545672577, guid: 942acebf14d45254a8a7dc5c7e76dcb3,
+        type: 3}
+      propertyPath: hitSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7146359368545672577, guid: 942acebf14d45254a8a7dc5c7e76dcb3,
+        type: 3}
+      propertyPath: maxHits
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7146359368545672579, guid: 942acebf14d45254a8a7dc5c7e76dcb3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1126,6 +1141,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Session
       objectReference: {fileID: 0}
+    - target: {fileID: 2407185966339467389, guid: 15324bc832c9d3442a1285842dc2e9de,
+        type: 3}
+      propertyPath: isAutoPlayEnabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2407185966339467390, guid: 15324bc832c9d3442a1285842dc2e9de,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1408,6 +1428,11 @@ PrefabInstance:
       propertyPath: paddle1
       value: 
       objectReference: {fileID: 49172432}
+    - target: {fileID: 4680384114056592828, guid: 324f1eebf309de645a1bbfdad54ad8a7,
+        type: 3}
+      propertyPath: randomFactor
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 324f1eebf309de645a1bbfdad54ad8a7, type: 3}
 --- !u!1001 &5280276995520877304
